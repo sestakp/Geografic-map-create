@@ -7,9 +7,12 @@ const settingSelector = {
     getMarkerFillColor: (state) => state.markerFillColor, 
     getMarkerStrokeColor: (state) =>state.markerStrokeColor, 
     getMarkerStrokeWidth: (state) => state.markerStrokeWidth,
+    getMarkerTextColor: (state) => state.markerTextColor,
     getMarkerSize: (state) => state.markerSize,
-    getTextOffset: (state) => state.textOffset,
+    getTextOffsetY: (state) => state.textOffsetY,
+    getTextOffsetX: (state) => state.textOffsetX,
     getMarkers: (state) => state.markers,
-}
+    getMarkerFontSize: (state) => state.markerFontSize
+} 
 
 export default settingSelector;

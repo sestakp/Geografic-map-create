@@ -12,6 +12,22 @@ const settingActions = {
         })
     },
 
+    setMarkerTextColor: (payload) => async(dispatch) => {
+
+        dispatch({
+            type: settingTypes.SET_MARKER_TEXT_COLOR,
+            payload: payload
+        })
+    },
+
+    setMarkerFontSize: (payload) => async(dispatch) => {
+
+        dispatch({
+            type: settingTypes.SET_MARKER_FONT_SIZE,
+            payload: payload
+        })
+    },
+
     setMapStrokeColor: (payload) => async(dispatch) => {
 
         dispatch({
@@ -52,9 +68,72 @@ const settingActions = {
         })
     },
 
-    setTextOffset: (payload) => async(dispatch) => {
+    setTextOffsetY: (payload) => async(dispatch) => {
         dispatch({
-            type: settingTypes.SET_TEXT_OFFSET,
+            type: settingTypes.SET_TEXT_OFFSET_Y,
+            payload: payload
+        })
+    },
+
+    setTextOffsetX: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_TEXT_OFFSET_X,
+            payload: payload
+        })
+    },
+
+    setTextOffsetYForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_TEXT_OFFSET_Y_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setTextOffsetXForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_TEXT_OFFSET_X_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerFontSizeForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_FONT_SIZE_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerSizeForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_SIZE_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerStrokeWidthForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_STROKE_WIDTH_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerFillColorForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_FILL_COLOR_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerStrokeColorForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_STROKE_COLOR_FOR_MARKER,
+            payload: payload
+        })
+    },
+
+    setMarkerTextColorForMarker: (payload) => async(dispatch) => {
+        dispatch({
+            type: settingTypes.SET_MARKER_TEXT_COLOR_FOR_MARKER,
             payload: payload
         })
     },

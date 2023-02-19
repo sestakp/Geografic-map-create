@@ -45,14 +45,27 @@ nav {
   padding: 10px
 }
 
-nav *{
-  margin: 10px;
+footer{
+  min-height: 20vh;
+  background-color: cornflowerblue;
 }
+nav .MuiButtonBase-root, nav .MuiAutocomplete-root{
+  margin-right: 10px !important;
+}
+
+
 .MuiInputBase-root{
   background-color: white;
 }
 
 .MuiButtonBase-root{
   background-color: white !important;
-  margin: 10px !important;
+  /*margin: 10px !important;*/
+}
+
+.compass{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 200px;
 }
