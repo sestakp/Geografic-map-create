@@ -82,7 +82,6 @@ function App(props) {
   }
 
   const geoUrl = "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/czech-republic/czech-republic-regions.json";
-
   return (
     <div className="App">
       <nav>
