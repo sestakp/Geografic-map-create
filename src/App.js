@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import geoJsonFile from "./assets/kraje.topojson"
 import './App.css';
 import * as ReactDOM from 'react-dom';
 import { LocationIq } from 'locationiq';
@@ -80,8 +81,8 @@ function App(props) {
 
 
   }
-
-  const geoUrl = "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/czech-republic/czech-republic-regions.json";
+  const geoUrl = geoJsonFile
+  
   return (
     <div className="App">
       <nav>
@@ -189,14 +190,19 @@ function App(props) {
             >
               <Geographies geography={geoUrl}>
                 {({ geographies }) =>
-                  geographies.map((geo) => (
+                  geographies.map((geo) => 
+                    
+                    {
+                      console.log("geo>", geo)
+                
+                      return(
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
                       fill={props.mapFillColor}
                       stroke={props.mapStrokeColor}
                     />
-                  ))
+                    )})
                 }
               </Geographies>
               {props.markers.map((marker) => (
